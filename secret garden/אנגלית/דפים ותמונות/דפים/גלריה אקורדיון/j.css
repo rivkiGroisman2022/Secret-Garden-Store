@@ -1,0 +1,233 @@
+*עמוד בסיסי*/
+body{
+  background-image: url(wood-bg.jpg );
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size:cover;
+  direction: rtl;
+  margin: 0px;
+}
+#any_ohevet_sushy{
+  width: 100%;
+  height: 90px;
+}
+#nav{
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(51, 51, 51, 0.938);   /*לעשות שקוף או לא?*/
+  z-index: 2;
+}
+#nav_bar {
+  list-style-type: none;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+#banana{
+  width: 100%;
+  height: 100%;
+}
+#bar {
+  float: right;
+}
+#bar a {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: block;
+  color: white;
+  text-shadow: #000000ce 3px 3px 3px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+#bar a:hover:not(.active) {
+  background-color: rgb(0, 0, 0);
+}
+#search{
+    float: left;
+    position: relative;
+    top: 0px;
+  left: 100px;  
+}
+#flag{
+    float: left;
+    position: relative;
+    top: 15px;
+    left: 80px;
+    width: 50px;
+    height: 30px;
+    z-index: 8;    
+}
+#footer{
+  background-color: rgb(160, 160, 160);
+  position: relative;
+  text-align: center;    
+  width: 100%;
+  height: 25px;
+  bottom: -120px;
+  right: 0px;
+  font-size: 15px;
+  }
+@media screen and (max-width:900px){
+  #search{
+    position: relative;
+    top: 0px;
+    left: 30px;
+  }
+  #flag{
+    position: relative;
+    top: 15px;
+    left: 10px;
+  }
+  #footer p{   
+    font-size: 15px;
+    }
+
+    #nav{
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+    #nav_bar {
+      float: none;
+      display: block;
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+    }
+    #bar a {
+      font-size: 30px;
+      display: block;
+    }
+    #footer{
+      display: none;
+    }
+    #header{
+     width: 100%; 
+
+    }
+    #fla{
+      justify-content: center;
+    }
+    
+  }
+  @media screen and (max-width:500px){
+    #nav_bar {
+      float: none;
+      display: grid;
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+    }
+  .rerrr{
+    display: none;
+  }
+  #headernavbar header{
+    width: 100%; 
+    height: 170px;
+    
+   }
+   #flag{
+    position: relative;
+    top: 0px;
+    left: 42%
+  }
+
+
+  }
+
+
+/*Now the styles*/
+* {
+	margin: 0; 
+	padding: 0;
+}
+body {
+background-image: url("wood-bg.jpg");
+	font-family: arial, verdana, tahoma;
+}
+
+/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordian {
+	width: 1500px; height: 450px;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 100px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+	width: 2000px;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 160px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+	display: block;
+}
+
+/*Image title styles*/
+.image_title {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; bottom: 0;	
+width: 640px;	
+
+}
+.image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 16px;
+}
+#vid{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+
+}

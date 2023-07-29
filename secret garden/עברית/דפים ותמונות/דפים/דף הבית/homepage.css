@@ -1,0 +1,511 @@
+body{
+  background-image: url(wood-bg.jpg );
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size:cover;
+  direction: rtl;
+  margin: 0px;
+}
+#any_ohevet_sushy{
+  width: 100%;
+  height: 90px;
+}
+#nav{
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(51, 51, 51, 0.938);   /*לעשות שקוף או לא?*/
+  z-index: 2;
+}
+#nav_bar {
+  list-style-type: none;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+#banana{
+  width: 100%;
+  height: 100%;
+}
+#bar {
+  float: right;
+}
+#bar a {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: block;
+  color: white;
+  text-shadow: #000000ce 3px 3px 3px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+#bar a:hover:not(.active) {
+  background-color: rgb(0, 0, 0);
+}
+#search{
+    float: left;
+    position: relative;
+    top: 0px;
+  left: 100px;  
+}
+#flag{
+    float: left;
+    position: relative;
+    top: 15px;
+    left: 80px;
+    width: 50px;
+    height: 30px;
+    z-index: 8;    
+}
+#footer{
+  background-color: rgb(160, 160, 160);
+  position: relative;
+  text-align: center;    
+  width: 100%;
+  height: 25px;
+  bottom: -120px;
+  right: 0px;
+  font-size: 15px;
+  }
+@media screen and (max-width:900px){
+  #search{
+    position: relative;
+    top: 0px;
+    left: 30px;
+  }
+  #flag{
+    position: relative;
+    top: 15px;
+    left: 10px;
+  }
+  #footer p{   
+    font-size: 15px;
+    }
+
+    #nav{
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+    #nav_bar {
+      float: none;
+      display: block;
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+    }
+    #bar a {
+      font-size: 30px;
+      display: block;
+    }
+    #footer{
+      display: none;
+    }
+    #header{
+     width: 100%; 
+
+    }
+    #fla{
+      justify-content: center;
+    }
+    
+  }
+  @media screen and (max-width:500px){
+    #nav_bar {
+      float: none;
+      display: grid;
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+    }
+  .rerrr{
+    display: none;
+  }
+  #headernavbar header{
+    width: 100%; 
+    height: 170px;
+    
+   }
+   #flag{
+    position: relative;
+    top: 0px;
+    left: 42%
+  }
+
+
+  }
+
+
+
+
+
+/*עמוד ראשי עיברית*/
+#main_home_page_row{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+#asaid_home_page_col{
+    width: 19%;
+    height: 67%;
+    position: relative;
+    position: fixed;
+    top: 170px;
+    left: 10px;
+    background-color: rgba(7, 7, 7, 0.384);
+    margin-top: 10px;
+    margin-left: 4px;
+
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight; 
+ 
+    animation-duration: 4s; 
+    -webkit-animation-duration: 3s;
+ 
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+ 
+    visibility: visible !important; 
+}
+ 
+@keyframes slideRight {
+    0% {transform: translateX(-150%);}      
+    100% {transform: translateX(0%);}
+}
+ 
+@-webkit-keyframes slideRight {
+    0% {-webkit-transform: translateX(-150%);}  
+    100% {-webkit-transform: translateX(0%);}
+}
+#h4_asaid{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin: 0px;
+}
+h4{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.39) 3px 3px;
+    font-size: 30px;
+    width: 100%;
+    height: 10%;
+    padding: 3px;
+    color: rgb(4, 207, 207);
+}
+#asaid_col{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    overflow: auto;
+}
+.gallery {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    float: left;
+    width: 180px;
+  } 
+  .gallery:hover {
+    border: 1px solid rgb(4, 207, 207);
+    box-shadow: 4px 5px rgba(46, 46, 46, 0.637);
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  .desc {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 4px;
+    text-align: center;
+    font: bold;
+    color: rgba(255, 255, 255, 0.842);
+    background-color: rgba(0, 0, 0, 0.671);
+  }
+#content_home_page_col{
+    width: 80%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    position: relative;
+}
+#top_product_home_page_row{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    margin-bottom: 20px;
+}
+#lower_product_home_page_row{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    margin-bottom: 20px;
+}
+#right_category__home_page{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 47%;
+    height: 100%; 
+    padding: 10px;  
+}
+#left_category__home_page{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 47%;
+    height: 100%;
+    padding: 10px;
+}
+#button_home_page{
+    width: 100%;
+    height: 100%;
+    border: solid 1px black;
+    box-shadow: rgba(77, 76, 76, 0.726) 8px 8px 5px;
+}
+#button_home_page a{
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.548) 3px 4px;
+    text-decoration: none;
+}
+.swings{
+    background-image: url(sa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: anima2 step-end 14s infinite alternate;
+
+    /* סוג האנימציה*/
+    animation-name: anim2;
+    -webkit-animation-name: anim2; 
+ 
+    /* כמה זמן להריץ את האנימציה*/
+    animation-duration: 14s; 
+    -webkit-animation-duration: 14s;
+ 
+    /* סוג אפקט מעבר*/
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+ 
+    /* מצב תצוגה*/
+    visibility: visible !important; 
+}
+@keyframes anim2{
+    0%{
+       background-image: url("sa.jpg");
+    }
+    33%{
+       background-image: url("sb.jpg");
+    }
+    66%{
+       background-image: url("sc.jpg");
+    }
+    100%{
+        background-image: url("sa.jpg");
+    }
+}
+.seating_system{
+    background-image: url(ssa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: anima3 step-end 14s infinite alternate;
+
+    /* סוג האנימציה*/
+    animation-name: anim3;
+    -webkit-animation-name: anim3; 
+ 
+    /* כמה זמן להריץ את האנימציה*/
+    animation-duration: 14s; 
+    -webkit-animation-duration: 14s;
+ 
+    /* סוג אפקט מעבר*/
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+ 
+    /* מצב תצוגה*/
+    visibility: visible !important;
+}
+@keyframes anim3{
+    0%{
+       background-image: url("ssa.jpg");
+    }
+    33%{
+       background-image: url("ssb.jpg");
+    }
+    66%{
+       background-image: url("ssc.jpg");
+    }
+    100%{
+       background-image: url("ssa.jpg");
+    }
+}
+.grill_and_barbecue{
+    background-image: url(ga.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: anima4 step-end 14s infinite alternate;
+
+    /* סוג האנימציה*/
+    animation-name: anim4;
+    -webkit-animation-name: anim4; 
+ 
+    /* כמה זמן להריץ את האנימציה*/
+    animation-duration: 14s; 
+    -webkit-animation-duration: 14s;
+ 
+    /* סוג אפקט מעבר*/
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+ 
+    /* מצב תצוגה*/
+    visibility: visible !important;
+}
+@keyframes anim4{
+    0%{
+       background-image: url("ga.jpg");
+    }
+    33%{
+       background-image: url("gb.jpg");
+    }
+    66%{
+       background-image: url("gc.jpg");
+    }
+    100%{
+       background-image: url("ga.jpg");
+    }
+}
+.all_products{
+    background-image: url(aa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: anima5 step-end 14s infinite alternate;
+
+    /* סוג האנימציה*/
+    animation-name: anim5;
+    -webkit-animation-name: anim5; 
+ 
+    /* כמה זמן להריץ את האנימציה*/
+    animation-duration: 14s; 
+    -webkit-animation-duration: 14s;
+ 
+    /* סוג אפקט מעבר*/
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+ 
+    /* מצב תצוגה*/
+    visibility: visible !important;
+}
+@keyframes anim5{
+    0%{
+       background-image: url("aa.jpg");
+    }
+    33%{
+       background-image: url("ab.jpg");
+    }
+    66%{
+       background-image: url("ac.jpg");
+    }
+    100%{
+        background-image: url("aa.jpg");
+    }
+}
+
+#content_home_page_col{   
+    /* סוג האנימציה*/
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn; 
+ 
+    /* כמה זמן להריץ את האנימציה*/
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+ 
+    /* סוג אפקט מעבר*/
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+ 
+    /* מצב תצוגה*/
+    visibility: visible !important; 
+}
+ 
+@keyframes fadeIn {
+    0% {opacity: 0.0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+@media screen and (max-width:900px){
+  #asaid_home_page_col{
+display: none;
+  }
+  #content_home_page_col{
+width: 100%;
+  }
+}
+@media screen and (max-width:500px){
+  #asaid_home_page_col{
+  display: none;
+  }
+  #content_home_page_col{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: 20px; /*הגובה מאיפה זה מתחיל. אם צריך לשנות...*/
+      right: 0px;
+      
+  }
+  #top_product_home_page_row{
+      width: 100%;
+      height: 25%;
+      position: relative;
+      top: 0px;
+      right: 0px;
+      margin-bottom: 20px;
+      
+      
+  }
+  #button_home_page{
+      width: 100%;
+      height: 100%;
+  }
+  #lower_product_home_page_row{
+      width: 100%;
+      height: 25%;
+      position: relative;
+      top: 170px;
+      right: 0px;
+      margin-bottom: 20px;
+      display: block;
+  }
+  #right_category__home_page{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 95%;
+      height: 100%; 
+      padding: 10px;  
+  }
+  #left_category__home_page{
+      position: absolute;
+      top: 170px;
+      right: 0px;
+      width: 95%;
+      height: 100%; 
+      padding: 10px;  
+  }
+  #button_home_page a{
+font-size: 50px;
+  }
+}
+

@@ -1,0 +1,319 @@
+/*עמוד בסיסי*/
+body{
+    background-image: url(wood-bg.jpg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size:cover;
+    direction: rtl;
+}
+#any_ohevet_sushy{
+    width: 100%;
+    height: 90px;
+  }
+  #nav{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(51, 51, 51, 0.938);   /*לעשות שקוף או לא?*/
+    z-index: 2;
+  }
+  #nav_bar {
+    list-style-type: none;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+  }
+  #banana{
+    width: 100%;
+    height: 100%;
+  }
+  #bar {
+    float: right;
+  }
+  #bar a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    color: white;
+    text-shadow: #000000ce 3px 3px 3px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  #bar a:hover:not(.active) {
+    background-color: rgb(0, 0, 0);
+  }
+  #search{
+      float: left;
+      position: relative;
+      top: 0px;
+    left: 100px;  
+  }
+  #flag{
+      float: left;
+      position: relative;
+      top: 15px;
+      left: 80px;
+      width: 50px;
+      height: 30px;
+      z-index: 8;    
+  }
+  #footer{
+    background-color: rgb(160, 160, 160);
+    position: relative;
+    text-align: center;    
+    width: 100%;
+    height: 25px;
+    bottom: -120px;
+    right: 0px;
+    font-size: 15px;
+    }
+  @media screen and (max-width:900px){
+    #search{
+      position: relative;
+      top: 0px;
+      left: 30px;
+    }
+    #flag{
+      position: relative;
+      top: 15px;
+      left: 10px;
+    }
+    #footer p{   
+      font-size: 15px;
+      }
+  
+      #nav{
+        position: relative;
+        top: 0px;
+        left: 0px;
+      }
+      #nav_bar {
+        float: none;
+        display: block;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+      }
+      #bar a {
+        font-size: 30px;
+        display: block;
+      }
+      #footer{
+        display: none;
+      }
+      #header{
+       width: 100%; 
+  
+      }
+      #fla{
+        justify-content: center;
+      }
+      
+    }
+    @media screen and (max-width:500px){
+      #nav_bar {
+        float: none;
+        display: grid;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+      }
+    .rerrr{
+      display: none;
+    }
+    #headernavbar header{
+      width: 100%; 
+      height: 170px;
+      
+     }
+     #flag{
+      position: relative;
+      top: 0px;
+      left: 42%
+    }
+  
+  
+    }
+/*עמוד לכל מוצר בפרד*/
+#both {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    font-family: cursive;
+    }
+#content{
+    margin: 0px;
+    margin-right: 20px;
+    box-shadow: 7px 5px hsla(0, 0%, 11%, 0.3);
+    width: 40%;
+}
+#content_word{
+    font-family: cursive;
+    font-size: 20px;
+    font-style: bold;
+    padding: 10px;
+    background-color:  hsla(0, 1%, 25%, 0.199);
+    text-align: center;  
+    color: rgb(0, 0, 0);
+    text-shadow: 0.5px 0.5px hsla(0, 1%, 25%, 0.3) ;
+}
+#h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgba(87, 50, 9, 0.822) hsla(0, 1%, 25%, 0.3);
+    text-align: center;
+    text-shadow: 2px 2px hsla(0, 1%, 25%, 0.3);
+}
+#list_colors{
+    text-align: right;
+}
+input[type="number"]{
+    max-width: 50px;
+    font-size: 20px;
+}
+#prices{
+    background-color: hsla(0, 4%, 18%, 0.3);
+    margin: 30px;
+    border: 2px rgb(54, 54, 54) dashed;
+}
+#oldprice{
+    font-size: 20px;
+    text-decoration: line-through;
+    line-height: 6px;
+}
+#realprice{
+    font-size: 27px;
+    color: red;
+    line-height: 10px;
+}
+#heara{
+    font-size: 15px;
+}
+#delivery{
+    padding: 10px;
+}
+#content_img{
+    width: 50%;
+    height: 70%;
+    position: fixed;
+    top: 150px;
+    left: 60px;
+    box-shadow: 7px 5px hsla(0, 0%, 9%, 0.3);
+}
+img{
+    width: 50%;
+    height: 70%;
+    position: fixed;
+    top: 150px;
+    left: 60px;
+    border: solid 0.2px black;
+}
+.btn {
+    display: inline-flex;
+    border: 2px solid#1991a7;
+    overflow: hidden;
+    place-content: center;
+    background: transparent;
+    margin: 10px;
+    width: 70%;
+}
+.btn1 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn1 a {
+    position: relative;
+    transition: all .45s ease-Out;
+    color: #222;
+    text-shadow:1px 1px rgb(102, 102, 102);
+    text-decoration: none;
+    font-size: 40px;
+    margin: 7px;
+}
+.btn1:hover a {
+    color: #e0e0e0;
+}
+#translate {
+    transform: rotate(40deg);
+    width: 100%;
+    height: 250%;
+    left: -115%;
+    top: -30px;
+    background: #1991a7;
+    position: absolute;
+    transition: all .3s ease-Out;
+}
+.btn1:hover #translate {
+    left: 0;
+}
+
+
+.btn2:hover a {
+    color: #e0e0e0;
+}
+.btn {
+    display: inline-flex;
+    border: 2px solid #354756;
+    color: #fefefe;
+    overflow: hidden;
+    place-content: center;
+    background: transparent;
+}
+.btn2 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn2 a {
+    position: relative;
+    transition: all .45s ease-Out;
+    color: #222;
+    text-shadow:1px 1px rgb(102, 102, 102);
+    text-decoration: none;
+    font-size: 25px;
+    margin: 7px;
+}
+#underline {
+    width: 100%;
+    height: 4px;
+    margin-top: 15px;
+    align-self: flex-end;
+    left: -100%;
+    background: #1991a7;
+    position: absolute;
+    transition: all .3s ease-Out;
+    bottom: 0;
+}
+.btn2:hover #underline {
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

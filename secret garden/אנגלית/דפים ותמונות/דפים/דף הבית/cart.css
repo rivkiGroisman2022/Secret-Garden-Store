@@ -1,0 +1,305 @@
+body{
+    background-image: url(wood-bg.jpg );
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size:cover;
+    direction: rtl;
+    margin: 0px;
+  }
+  #any_ohevet_sushy{
+    width: 100%;
+    height: 90px;
+  }
+  #nav{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(51, 51, 51, 0.938);   /*לעשות שקוף או לא?*/
+    z-index: 2;
+  }
+  #nav_bar {
+    list-style-type: none;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+  }
+  #banana{
+    width: 100%;
+    height: 100%;
+  }
+  #bar {
+    float: right;
+  }
+  #bar a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    color: white;
+    text-shadow: #000000ce 3px 3px 3px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  #bar a:hover:not(.active) {
+    background-color: rgb(0, 0, 0);
+  }
+  #search{
+      float: left;
+      position: relative;
+      top: 0px;
+    left: 100px;  
+  }
+  #flag{
+      float: left;
+      position: relative;
+      top: 15px;
+      left: 80px;
+      width: 50px;
+      height: 30px;
+      z-index: 8;    
+  }
+  #footer{
+    background-color: rgb(160, 160, 160);
+    position: relative;
+    text-align: center;    
+    width: 100%;
+    height: 25px;
+    bottom: -120px;
+    right: 0px;
+    font-size: 15px;
+    }
+  @media screen and (max-width:900px){
+    #search{
+      position: relative;
+      top: 0px;
+      left: 30px;
+    }
+    #flag{
+      position: relative;
+      top: 15px;
+      left: 10px;
+    }
+    #footer p{   
+      font-size: 15px;
+      }
+  
+      #nav{
+        position: relative;
+        top: 0px;
+        left: 0px;
+      }
+      #nav_bar {
+        float: none;
+        display: block;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+      }
+      #bar a {
+        font-size: 30px;
+        display: block;
+      }
+      #footer{
+        display: none;
+      }
+      #header{
+       width: 100%; 
+  
+      }
+      #fla{
+        justify-content: center;
+      }
+      
+    }
+    @media screen and (max-width:500px){
+      #nav_bar {
+        float: none;
+        display: grid;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+      }
+    .rerrr{
+      display: none;
+    }
+    #headernavbar header{
+      width: 100%; 
+      height: 170px;
+      
+     }
+     #flag{
+      position: relative;
+      top: 0px;
+      left: 42%
+    }
+  
+  
+    }
+/*הסל שלי*/
+#main_main_cart{
+    position: relative;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+}
+#col_cart{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bgcolor{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+.gallery_cart {
+    margin: 7px;
+    border: 1px solid #ccc;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.gallery_cart:hover {
+    border: 3px solid #ffffff7e;
+}
+.gallery_cart img {
+    width: 70%;
+    height: auto;
+}
+.desc_cart {
+    font-size: 70px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    color: blanchedalmond;
+}
+button {
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 100%;
+}
+.btn {
+       width: 60%;
+       font-size: 40px ;
+       font: bold;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       display: inline-flex;
+       border: 3px solid #ffffff;
+       border-radius: 3px;
+       color: #000000;
+       text-shadow: #1f1f1f 2px 2px 3px;
+       place-content: center;
+       background: transparent;
+   }
+   .btn5 {
+       position: relative;
+       overflow: hidden;
+       cursor: pointer;
+   }
+   .btn5 a {
+       position: relative;
+       transition: all .35s ease-Out;
+       color: white;
+       text-decoration: none;
+   }
+   #slide {
+       width: 100%;
+       height: 100%;
+       left: -100%;
+       background: #1992a77e;
+       position: absolute;
+       transition: all .35s ease-Out;
+       bottom: 0;
+   }
+   .btn5:hover #slide {
+       left: 0;
+   }
+   .btn5 span{
+    position: relative;
+    transition: all .35s ease-Out;
+    color: white;
+    font-size: 25px;
+   }
+   #button_cart{
+     width: 40%;
+   }
+   h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-right: 60px;
+    font: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: aliceblue 4px 4px 5px;
+    text-align: center;
+   }
+   .gallery_cart_last {
+    margin: 5px;
+    margin-top: 60px;
+    border: 2px solid rgb(255, 255, 255);
+    float: left;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.493) 3px 4px 4px;
+    margin-bottom: 40px;
+  }
+  .gallery_cart_last:hover {
+    border: 2px solid rgba(75, 75, 75, 0.329);
+  }
+  
+  .gallery_cart_last img {
+    width: 100%;
+    height: 220px;
+  }
+  .gallery_cart_last img:hover{
+      border: solid 2px black;
+      box-shadow: rgba(0, 0, 0, 0.534) 4px 3px 5px;
+  }
+  .desc_cart_last {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(216, 216, 216, 0.123);
+  }
+   .sales{
+    animation: anim10 15s infinite alternate;
+   }
+   .sales{
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight; 
+ 
+    animation-duration: 0s; 
+    -webkit-animation-duration: 17s;
+ 
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95); 
+    -webkit-animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95) ;     
+ 
+    visibility: visible; 
+}
+ 
+@keyframes slideRight {
+    0% {transform: translateX(130%);}      
+    100% {transform: translateX(0%);}
+}
+ 
+@-webkit-keyframes slideRight {
+    0% {-webkit-transform: translateX(130%);}  
+    100% {-webkit-transform: translateX(0%);}
+   }
+
+   #cart_olay{
+    border-top: solid 2px white;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.534);
+}

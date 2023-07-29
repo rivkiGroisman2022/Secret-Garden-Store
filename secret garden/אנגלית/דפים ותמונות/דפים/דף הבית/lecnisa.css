@@ -1,0 +1,165 @@
+
+/*עמוד מספר 2 עמוד של login שימו לב שהבודי פה שונה מהבודי בכל שאר העמודים. מה לעשות?*/
+body{
+ direction: rtl;
+ background-image: url("Depositphotos_92046750_original.jpg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ animation: anim1 step-end 20s infinite alternate;
+ }
+    @keyframes anim1{
+     0%{
+        background-image: url("Depositphotos_92046750_original.jpg");
+     }
+     20%{
+        background-image: url("pull_cheirs.jpg");
+     }
+     40%{
+        background-image: url("bari-do-min-1024x670.jpg");
+     }
+     60%{
+        background-image: url("beauty.jpg");
+     }
+     80%{
+        background-image: url("wow.gif");
+     }
+     100%{
+        background-image: url("Depositphotos_92046750_original.jpg");
+    }
+}
+fieldset{
+    text-align: center;
+    padding: 10px;
+    width: 500px;
+    border: none;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    height: 800px;
+}
+fieldset h1{
+    font-weight: bold; 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px rgb(0, 0, 0);
+    font-size: 100px;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#row_main_form{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+ }
+ form{
+    margin: auto;
+    position: relative;
+    top: 0px;
+    right: 0px;
+ }
+ input[type="text"], input[type="password"]{
+    font-size: 20px;
+    max-width: 300px;
+    color: rgb(0, 0, 0);
+    background-color: hsla(0, 0%, 57%, 0.3);
+ }
+ input[type="email"]{
+    font-size: 20px;
+    max-width: 300px;
+    color: rgb(0, 0, 0);
+    background-color: hsla(0, 0%, 57%, 0.3);
+ }
+ input[type="text"]::placeholder{
+    color: rgb(72, 73, 72);
+ }
+ input[type="password"]::placeholder{
+    color: rgb(72, 73, 72);
+ }
+ input[type="email"]::placeholder{
+    color: rgb(72, 73, 72);
+ }
+ label{
+    font-size: 20px;
+    font: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+ }
+#row_cnisa{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin: 20px; 
+}
+input[type=text], input[type=password], input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#button{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+}
+button {
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 100%;
+}
+.btn{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+.btn {
+    width: 80%;
+    font-size: 30px ;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-flex;
+    border: 2px solid #ffffff;
+    color: #000000;
+    text-shadow: #fefefe 2px 2px;
+    overflow: hidden;
+    place-content: center;
+    background: transparent;
+}
+.btn5 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn5 span {
+    position: relative;
+    transition: all .35s ease-Out;
+}
+#slide {
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background: #1992a77e;
+    position: absolute;
+    transition: all .35s ease-Out;
+    bottom: 0;
+}
+.btn5:hover #slide {
+    left: 0;
+}
+@media screen and (max-width:400px){
+    #row_main_form{
+        display: contents;
+        justify-content: right;
+        margin-top: 50px;
+     }
+ #homepage.html{
+     width: 100%;
+     height: auto;
+ }
+ #col_form{
+     display: block;
+ }
+ 
+}
+
